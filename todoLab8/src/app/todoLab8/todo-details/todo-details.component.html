@@ -1,1 +1,27 @@
-<p>todo-details works!</p>
+<div class="div1">
+    <h1><u>Todo Details</u></h1>
+
+    <div *ngIf="todo" class="div2" >
+    
+        <h2>{{todo.title}} Details</h2>
+        <div class="div3">
+            <span>id: </span>
+            {{todo.id}}
+        </div>
+        <div class="div4">
+            <label class="lbl">Date:
+                <input [(ngModel)]="todo.date" placeholder="Date"/>
+            </label>
+
+            <label class="lbl">title:
+                <input [(ngModel)]="todo.title" placeholder="title"/>
+            </label>
+
+            <label class="lbl">description:
+                <input [(ngModel)]="todo.description" placeholder="description"/>
+            </label>
+
+        </div>
+    
+    </div>
+</div>
